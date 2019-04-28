@@ -73,7 +73,9 @@
                             <configLocation>checkstyle.xml</configLocation>
                             <encoding>UTF-8</encoding>
                             <consoleOutput>true</consoleOutput>
-                            <failsOnError>true</failsOnError>
+                            <!-- False, because I don't want build to fail if checkstyle schema file is not
+                                 available via Internet -->
+                            <failsOnError>false</failsOnError>
                             <failOnViolation>true</failOnViolation>
                             <includeTestSourceDirectory>true</includeTestSourceDirectory>
                         </configuration>
