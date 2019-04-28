@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="IntegrationSuite">
+  <test name="IntegrationTest" verbose="1">
+      <groups>
+          <run>
+              <include name="integration"/>
+              <exclude name="broken"/>
+          </run>
+      </groups>
+      <packages>
+          <package name="com.mobiquityinc.packer.*"/>
+      </packages>
+ </test>
+</suite>

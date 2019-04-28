@@ -35,7 +35,7 @@
         <!-- No long abbreviations in regular names -->
         <module name="AbbreviationAsWordInName">
             <property name="ignoreFinal" value="false"/>
-            <property name="allowedAbbreviationLength" value="2"/>
+            <property name="allowedAbbreviationLength" value="4"/>
         </module>
 
         <!-- Class with name starting from 'Abstract' should be abstract -->
@@ -103,7 +103,7 @@
 
         <!-- No need to instantiate classes with factory methods -->
         <module name="IllegalInstantiation">
-            <property name="classes" value="java.lang.Boolean,java.lang.Integer,java.lang.Long,java.math.BigDecimal,java.math.BigInteger"/>
+            <property name="classes" value="java.lang.Boolean,java.lang.Integer,java.lang.Long,java.math.BigInteger"/>
         </module>
 
         <!-- No throws of too general exceptions, errors, etc -->

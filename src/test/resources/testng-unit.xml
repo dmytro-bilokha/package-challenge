@@ -5,7 +5,7 @@
   <test name="UnitTest" verbose="1">
       <groups>
           <run>
-              <include name="packer.unit"/>
+              <include name="unit"/>
               <exclude name="broken"/>
           </run>
       </groups>
