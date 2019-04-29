@@ -3,9 +3,9 @@ This repository contains source code for the package challenge solution.
 
 ## Solution Description
 The solution developed consists of following main logical blocks:
-l. Packaging Task Parser.
-l. Packaging Task Solver.
-l. Packer.
+1. Packaging Task Parser.
+1. Packaging Task Solver.
+1. Packer.
 
 ### Packaging Task Parser
 The goal of the parser is to try to parse one line which represents a packaging task and either return object
@@ -50,8 +50,8 @@ The solver won't be called in such scenario. I've implemented the packer in such
 
 ## Infrastructure Description
 In this part I'd like to shed some light on infrastructure-related design:
-l. Tests.
-l. Static code analysis.
+1. Tests.
+1. Static code analysis.
 
 ### Tests
 The solution contains unit and integration tests. In this project I use the following definitions:
