@@ -16,7 +16,7 @@ message (`InvalidTaskStringException`). The parser implementation is based on fo
   without fractional part, but I've decided to assume that fractional part is possible.
 * Thing's index is integer, because I don't see any value in having fractional part for the index.
 * Strings with unpaired braces, more or less than one colon, empty or non-valid thing's definition are not allowed.
-* The input string's encoding is UTF-8 and the string could contain unicode symbols.
+* The input string's encoding is UTF-8 and the string could contain Unicode symbols.
 * Euro currency symbol before thing's cost is not mandatory.
 * Additional constraints on package's weight, thing's weight and cost, maximum amount of things should be checked.
 
