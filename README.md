@@ -61,6 +61,7 @@ The solution contains unit and integration tests. In this project I use the foll
 * I consider a test as 'integration test' if it tests logic from more than one of the project's classes. The example is
   the `PackagingTaskSolverTest`, because it tests the `PackagingTaskSolver`, but the solver internally uses logic from
   the `PackageLayout` class.
+  
 Unit tests are executed on the *Maven test* phase, integration test run on the *Maven verify* phase.
 I've used TestNG framework for tests instead of jUnit, because I find TestNG more flexible and easier to use with
 integration tests.
@@ -74,3 +75,4 @@ checks are integrated in the Jenkins pipeline, but here I've used Maven plugins.
 To ensure, that the project builds and passes all tests not only on developer's machine, but also in independent clean
 environment, [Travis CI](https://travis-ci.org/) is used. Usually I use [Jenkins](https://jenkins.io/), but I
 don't have a private Jenkins installation available at the moment.
+
