@@ -52,6 +52,7 @@ The solver won't be called in such scenario. I've implemented the packer in such
 In this part I'd like to shed some light on infrastructure-related design:
 1. Tests.
 1. Static code analysis.
+1. Travis CI.
 
 ### Tests
 The solution contains unit and integration tests. In this project I use the following definitions:
@@ -68,3 +69,8 @@ integration tests.
 In this project I use [Checkstyle](http://checkstyle.sourceforge.net/), [PMD](https://pmd.github.io/) and
 [SpotBugs](https://spotbugs.github.io/) to enforce some code style, best practices and prevent bugs. Usually these
 checks are integrated in the Jenkins pipeline, but here I've used Maven plugins.
+
+### Travis CI
+To ensure, that the project builds and passes all tests not only on developer's machine, but also in independent clean
+environment, [Travis CI](https://travis-ci.org/) is used. Usually I use [Jenkins](https://jenkins.io/), but I
+don't have a private Jenkins installation available at the moment.
